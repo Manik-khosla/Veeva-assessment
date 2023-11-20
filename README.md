@@ -23,7 +23,7 @@ Along with the log file HTML report is being generated in target/cucumber-htlm-r
 Tests execution for  DP1 Module
 Go to DP1 Module root directory where pom.xml is present
 
-Run command - mvn test verify -DsuiteFile=src/test/resources/CPTestSuite.xml
+Run command - mvn test verify -DsuiteFile=src/test/resources/DP1Tests.xml
 
 After the tests are executed for CP Module Log.txt file is generated which contains the Jacket Title,Price and top seller message shown below the product. 
 Note - If no top seller message is present it displays NULL in the log file.
@@ -34,4 +34,4 @@ Along with the log file HTML report is being generated in target/cucumber-htlm-r
 Build Parent module 
 Go to parent project root directory
 
-Run command - maven install -DskipTests 
+Run command - mvn install -DskipTests 
