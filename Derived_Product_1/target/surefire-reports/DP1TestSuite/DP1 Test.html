@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 20 16:12:47 IST 2023</td>
+<td>Started on:</td><td>Mon Nov 20 21:31:29 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16230 ms)</td>
+<tr><td>Total time:</td><td>75 seconds (75687 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,63 +77,81 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.core.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.core.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  Number of Slides displayed and title", "CP1 Home Page Test Cases"</td>
-<td><div><pre>java.lang.AssertionError: expected [Sixers Take Down Hawks in Tournament Play] but found [Sixers Defeat Nets on the Road]
-	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
-	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
-	at ?.Slides containing title &quot;Sixers Take Down Hawks in Tournament Play&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
-... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1379221537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1379221537'><pre>java.lang.AssertionError: expected [Sixers Take Down Hawks in Tournament Play] but found [Sixers Defeat Nets on the Road]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
-	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
-	at ?.Slides containing title &quot;Sixers Take Down Hawks in Tournament Play&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@64aa1805 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Sixers Take Down Hawks in Tournament Play&quot; is displayed with &quot;/sixers/videos/philadelphia-76ers-vs-atlanta-hawks-highlights-nov-17-2023&quot;  for duration &quot;10&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace965822771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace965822771'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@64aa1805 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Sixers Take Down Hawks in Tournament Play&quot; is displayed with &quot;/sixers/videos/philadelphia-76ers-vs-atlanta-hawks-highlights-nov-17-2023&quot;  for duration &quot;10&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
 </pre></div></td>
-<td>15</td>
+<td>74</td>
 <td>com.core.testRunner.TestRunner@4550bb58</td></tr>
 <tr>
 <td title='com.core.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.core.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  Number of Slides displayed and title", "CP1 Home Page Test Cases"</td>
-<td><div><pre>java.lang.AssertionError: expected [Sixers Defeat Nets on the Road] but found [Sixers Take Down Hawks in Tournament Play]
-	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
-	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
-	at ?.Slides containing title &quot;Sixers Defeat Nets on the Road&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
-... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1031777595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1031777595'><pre>java.lang.AssertionError: expected [Sixers Defeat Nets on the Road] but found [Sixers Take Down Hawks in Tournament Play]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
-	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
-	at ?.Slides containing title &quot;Sixers Defeat Nets on the Road&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@180c2054 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Embiid Named Player of the Week&quot; is displayed with &quot;/sixers/news/joel-embiid-named-eastern-conference-player-of-the-week&quot;  for duration &quot;10&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace504332250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace504332250'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@180c2054 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Embiid Named Player of the Week&quot; is displayed with &quot;/sixers/news/joel-embiid-named-eastern-conference-player-of-the-week&quot;  for duration &quot;10&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
 </pre></div></td>
-<td>15</td>
+<td>74</td>
 <td>com.core.testRunner.TestRunner@4550bb58</td></tr>
 <tr>
 <td title='com.core.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.core.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  Number of Slides displayed and title", "CP1 Home Page Test Cases"</td>
-<td><div><pre>java.lang.AssertionError: expected [Embiid Named Player of the Week] but found [Sixers Defeat Nets on the Road]
-	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
-	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
-	at ?.Slides containing title &quot;Embiid Named Player of the Week&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
-... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace984983166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace984983166'><pre>java.lang.AssertionError: expected [Embiid Named Player of the Week] but found [Sixers Defeat Nets on the Road]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
-	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
-	at ?.Slides containing title &quot;Embiid Named Player of the Week&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@7e2ce6b5 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Sixers Defeat Nets on the Road&quot; is displayed with &quot;/sixers/videos/philadelphia-76ers-vs-brooklyn-nets-nov-19-2023&quot;  for duration &quot;10&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1076898886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1076898886'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@7e2ce6b5 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Sixers Defeat Nets on the Road&quot; is displayed with &quot;/sixers/videos/philadelphia-76ers-vs-brooklyn-nets-nov-19-2023&quot;  for duration &quot;10&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
 </pre></div></td>
-<td>15</td>
+<td>74</td>
 <td>com.core.testRunner.TestRunner@4550bb58</td></tr>
 </table><p>
 </body>

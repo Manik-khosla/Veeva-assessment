@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="DP1TestSuite" parallel="false">
+<suite name="DP1TestSuite">
   	<parameter name="filename" value = "dp1.conf"  />
 	<test name="DP1 Test" >
         <parameter name="cucumber.features" value="src/test/java/com/dp1/feature"/>

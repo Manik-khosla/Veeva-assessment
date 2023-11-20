@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-20T16:12:47 IST" name="DP1TestSuite" finished-at="2023-11-20T16:13:03 IST" duration-ms="16230">
+  <suite started-at="2023-11-20T21:31:29 IST" name="DP1TestSuite" finished-at="2023-11-20T21:32:44 IST" duration-ms="75687">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-11-20T16:12:47 IST" name="DP1 Test" finished-at="2023-11-20T16:13:03 IST" duration-ms="16230">
+    <test started-at="2023-11-20T21:31:29 IST" name="DP1 Test" finished-at="2023-11-20T21:32:44 IST" duration-ms="75687">
       <class name="com.core.testRunner.TestRunner">
-        <test-method is-config="true" signature="readAppConfiguration(java.lang.String)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T16:12:47 IST" name="readAppConfiguration" finished-at="2023-11-20T16:12:47 IST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="readAppConfiguration(java.lang.String)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T21:31:29 IST" name="readAppConfiguration" finished-at="2023-11-20T21:31:29 IST" duration-ms="82" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,18 +21,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readAppConfiguration -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T16:12:47 IST" name="setUpClass" finished-at="2023-11-20T16:12:48 IST" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T21:31:29 IST" name="setUpClass" finished-at="2023-11-20T21:31:29 IST" duration-ms="261" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6c8bca63]]>
+                <![CDATA[org.testng.TestRunner@957e06]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T16:12:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T16:13:03 IST" duration-ms="15073" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T21:31:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T21:32:44 IST" duration-ms="74668" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -45,28 +45,31 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected [Sixers Take Down Hawks in Tournament Play] but found [Sixers Defeat Nets on the Road]]]>
+              <![CDATA[Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@64aa1805 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Sixers Take Down Hawks in Tournament Play] but found [Sixers Defeat Nets on the Road]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
-at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
-at ✽.Slides containing title "Sixers Take Down Hawks in Tournament Play" are displayed for duration "0"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@64aa1805 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+at ✽.Slides containing title "Sixers Take Down Hawks in Tournament Play" is displayed with "/sixers/videos/philadelphia-76ers-vs-atlanta-hawks-highlights-nov-17-2023"  for duration "10"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T16:12:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T16:13:03 IST" duration-ms="15374" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T21:31:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T21:32:44 IST" duration-ms="74881" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -79,28 +82,31 @@ at ✽.Slides containing title "Sixers Take Down Hawks in Tournament Play" are d
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected [Sixers Defeat Nets on the Road] but found [Sixers Take Down Hawks in Tournament Play]]]>
+              <![CDATA[Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@180c2054 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Sixers Defeat Nets on the Road] but found [Sixers Take Down Hawks in Tournament Play]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
-at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
-at ✽.Slides containing title "Sixers Defeat Nets on the Road" are displayed for duration "0"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@180c2054 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+at ✽.Slides containing title "Embiid Named Player of the Week" is displayed with "/sixers/news/joel-embiid-named-eastern-conference-player-of-the-week"  for duration "10"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T16:12:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T16:13:03 IST" duration-ms="15542" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T21:31:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T21:32:44 IST" duration-ms="74853" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -113,28 +119,31 @@ at ✽.Slides containing title "Sixers Defeat Nets on the Road" are displayed fo
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected [Embiid Named Player of the Week] but found [Sixers Defeat Nets on the Road]]]>
+              <![CDATA[Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@7e2ce6b5 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Embiid Named Player of the Week] but found [Sixers Defeat Nets on the Road]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
-at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
-at ✽.Slides containing title "Embiid Named Player of the Week" are displayed for duration "0"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@7e2ce6b5 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+at ✽.Slides containing title "Sixers Defeat Nets on the Road" is displayed with "/sixers/videos/philadelphia-76ers-vs-brooklyn-nets-nov-19-2023"  for duration "10"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T16:13:03 IST" name="tearDownClass" finished-at="2023-11-20T16:13:03 IST" duration-ms="416" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-20T21:32:44 IST" name="tearDownClass" finished-at="2023-11-20T21:32:44 IST" duration-ms="501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

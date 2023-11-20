@@ -28,9 +28,9 @@ public class DP1HomePageStepDefinitions extends DP1BaseSetup{
 	    driver.get(url);
 	}
 
-	@Then("Slides containing title {string} are displayed for duration {string}")
-	public void slides_containing_title_are_displayed_for_duration(String title, String duration) {
-	    dp1HomePage.validateSlideTitleAndDuration(title,duration);
+	@Then("Slides containing title {string} is displayed with {string}  for duration {string}")
+	public void slides_containing_title_is_displayed_with_for_duration(String title, String href ,String duration) {
+	    dp1HomePage.validateSlideTitleAndDuration(title,href, duration);
 	}
 	
 	@After
