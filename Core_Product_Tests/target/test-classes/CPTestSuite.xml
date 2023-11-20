@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CPTestSuite" parallel="methods">
+  	<parameter name="filename" value = "core-products.conf" />
+	<test thread-count="2" name="CP Test" >
+        <parameter name="cucumber.features" value="src/test/java/com/core_product/feature"/>
+		<parameter name="cucumber.glue" value="com.core_product.stepdefinitions"/>
+		<classes>
+			<class name="com.veeva_automation_framework.testRunner.TestRunner"/>
+		</classes>
+	</test>
+</suite>

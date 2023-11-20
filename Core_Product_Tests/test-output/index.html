@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-CPTestSuite" class="navigator-link">
-              <span class="suite-name border-passed">CPTestSuite</span>
+              <span class="suite-name border-failed">CPTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CPTestSuite" class="hide-methods failed suite-CPTestSuite"> (hide)</a> <!-- hide-methods failed suite-CPTestSuite -->
+                      <a href="#" panel-name="suite-CPTestSuite" class="show-methods failed suite-CPTestSuite"> (show)</a> <!-- show-methods failed suite-CPTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-CPTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CPTestSuite" title="com.veeva_automation_framework.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Count All Video Feeds&quot;, &quot;Contains CP Tests&quot;)">runScenario("Count All Video Feeds", "Contains CP Tests")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CPTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,11 +118,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-CPTestSuite" title="com.veeva_automation_framework.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Filter products by Department&quot;, &quot;Contains CP Tests&quot;)">runScenario("Filter products by Department", "Contains CP Tests")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CPTestSuite" title="com.veeva_automation_framework.testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Count All Video Feeds&quot;, &quot;Contains CP Tests&quot;)">runScenario("Count All Video Feeds", "Contains CP Tests")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-CPTestSuite -->
@@ -123,6 +132,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CPTestSuite" class="panel CPTestSuite">
+          <div class="suite-CPTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.veeva_automation_framework.testRunner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Count All Video Feeds&quot;, &quot;Contains CP Tests&quot;)">
+                  </a> <!-- runScenario("Count All Video Feeds", "Contains CP Tests") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Count All Video Feeds","Contains CP Tests")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on windows (82006aa0-5969-4088-8aa3-1101b31aa413)] -&gt; xpath: //a[@title=&quot;News &amp; Features&quot;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 119.0.1, moz:accessibilityChecks: false, moz:buildID: 20231106151204, moz:debuggerAddress: 127.0.0.1:44281, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12752, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:44281/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82006aa0-5969-4088-8aa3-1101b31aa413
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.veeva_automation_framework.pageobjects.BasePage.waitForElement(BasePage.java:19)
+	at com.core_product.pageobjects.CPHomePage.selectCategory(CPHomePage.java:58)
+	at com.core_product.stepdefinitions.CPStepDefinition.select_category(CPStepDefinition.java:31)
+	at ✽.select &quot;News &amp; Features&quot; Category(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Core_Product_Tests/src/test/java/com/core_product/feature/CPTests.feature:16)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CPTestSuite-class-failed -->
           <div class="suite-CPTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -135,16 +176,6 @@
                   </a> <!-- runScenario("Filter products by Department", "Contains CP Tests") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Filter products by Department","Contains CP Tests")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Count All Video Feeds&quot;, &quot;Contains CP Tests&quot;)">
-                  </a> <!-- runScenario("Count All Video Feeds", "Contains CP Tests") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Count All Video Feeds","Contains CP Tests")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -218,16 +249,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.veeva_automation_framework.testRunner.TestRunner')
-data.setCell(0, 3, 79570);
+data.setCell(0, 3, 135715);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.veeva_automation_framework.testRunner.TestRunner')
-data.setCell(1, 3, 48380);
+data.setCell(1, 3, 71955);
 window.suiteTableData['CPTestSuite']= { tableData: data, tableDiv: 'times-div-CPTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-CPTestSuite">
               </div> <!-- times-div-CPTestSuite -->
             </div> <!-- times-div -->
@@ -259,20 +290,22 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@710c2b53)</span>
-                <span class="method-start">118 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@7ce026d3)</span>
+                <span class="method-start">107 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Filter products by Department", "Contains CP Tests")</span>
-                <span class="method-start">305 ms</span>
+                <span class="method-start">286 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Count All Video Feeds", "Contains CP Tests")</span>
-                <span class="method-start">305 ms</span>
+                <span class="method-start">286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">79877 ms</span>
+                <span class="method-start">136005 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

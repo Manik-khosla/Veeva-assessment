@@ -10,7 +10,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="1"/>
           <include name="readAppConfiguration"/>
         </methods>
       </class> <!-- com.veeva_automation_framework.testRunner.TestRunner -->

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-20T09:44:41 IST" name="CPTestSuite" finished-at="2023-11-20T09:46:01 IST" duration-ms="80017">
+  <suite started-at="2023-11-20T10:21:22 IST" name="CPTestSuite" finished-at="2023-11-20T10:23:38 IST" duration-ms="136146">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-11-20T09:44:41 IST" name="CP Test" finished-at="2023-11-20T09:46:01 IST" duration-ms="80017">
+    <test started-at="2023-11-20T10:21:22 IST" name="CP Test" finished-at="2023-11-20T10:23:38 IST" duration-ms="136146">
       <class name="com.veeva_automation_framework.testRunner.TestRunner">
-        <test-method is-config="true" signature="readAppConfiguration(java.lang.String)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T09:44:41 IST" name="readAppConfiguration" finished-at="2023-11-20T09:44:41 IST" duration-ms="99" status="PASS">
+        <test-method is-config="true" signature="readAppConfiguration(java.lang.String)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T10:21:21 IST" name="readAppConfiguration" finished-at="2023-11-20T10:21:22 IST" duration-ms="88" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,18 +21,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readAppConfiguration -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T09:44:41 IST" name="setUpClass" finished-at="2023-11-20T09:44:41 IST" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T10:21:22 IST" name="setUpClass" finished-at="2023-11-20T10:21:22 IST" duration-ms="165" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@710c2b53]]>
+                <![CDATA[org.testng.TestRunner@7ce026d3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T09:44:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T09:46:01 IST" duration-ms="79570" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T10:21:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T10:23:37 IST" duration-ms="135715" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T09:44:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T09:45:30 IST" duration-ms="48380" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T10:21:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T10:22:34 IST" duration-ms="71955" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -61,10 +61,35 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on windows (82006aa0-5969-4088-8aa3-1101b31aa413)] -> xpath: //a[@title="News & Features"]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 119.0.1, moz:accessibilityChecks: false, moz:buildID: 20231106151204, moz:debuggerAddress: 127.0.0.1:44281, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12752, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:44281/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82006aa0-5969-4088-8aa3-1101b31aa413]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on windows (82006aa0-5969-4088-8aa3-1101b31aa413)] -> xpath: //a[@title="News & Features"]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 119.0.1, moz:accessibilityChecks: false, moz:buildID: 20231106151204, moz:debuggerAddress: 127.0.0.1:44281, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12752, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:44281/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82006aa0-5969-4088-8aa3-1101b31aa413
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.veeva_automation_framework.pageobjects.BasePage.waitForElement(BasePage.java:19)
+at com.core_product.pageobjects.CPHomePage.selectCategory(CPHomePage.java:58)
+at com.core_product.stepdefinitions.CPStepDefinition.select_category(CPStepDefinition.java:31)
+at ✽.select "News & Features" Category(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Core_Product_Tests/src/test/java/com/core_product/feature/CPTests.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T09:46:01 IST" name="tearDownClass" finished-at="2023-11-20T09:46:01 IST" duration-ms="241" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@6ed3ccb2]" started-at="2023-11-20T10:23:37 IST" name="tearDownClass" finished-at="2023-11-20T10:23:38 IST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

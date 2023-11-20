@@ -325,8 +325,7 @@
   </dependencies>
   
   <modules>
-      
+     <module>Core_Product_Tests</module>
     <module>Derived_Product_1</module>
-      
   </modules>
 </project>

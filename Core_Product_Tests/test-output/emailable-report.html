@@ -9,11 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">CPTestSuite</th></tr>
-<tr><td><a href="#t0">CP Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">80,017</td><td></td><td></td></tr>
+<tr><td><a href="#t0">CP Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">136,146</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CPTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CP Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.veeva_automation_framework.testRunner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1700453681990</td><td rowspan="2">79570</td></tr><tr class="passedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CPTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CP Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.veeva_automation_framework.testRunner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1700455882267</td><td rowspan="1">71955</td></tr><tr><th colspan="4">CP Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.veeva_automation_framework.testRunner.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1700455882267</td><td rowspan="1">135715</td></tr></tbody>
 </table>
-<h2>CP Test</h2><h3 id="m0">com.veeva_automation_framework.testRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Filter products by Department&quot;</td><td>&quot;Contains CP Tests&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.veeva_automation_framework.testRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Count All Video Feeds&quot;</td><td>&quot;Contains CP Tests&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CP Test</h2><h3 id="m0">com.veeva_automation_framework.testRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Count All Video Feeds&quot;</td><td>&quot;Contains CP Tests&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on windows (82006aa0-5969-4088-8aa3-1101b31aa413)] -&gt; xpath: //a[@title=&quot;News &amp; Features&quot;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 119.0.1, moz:accessibilityChecks: false, moz:buildID: 20231106151204, moz:debuggerAddress: 127.0.0.1:44281, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12752, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:44281/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82006aa0-5969-4088-8aa3-1101b31aa413
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.veeva_automation_framework.pageobjects.BasePage.waitForElement(BasePage.java:19)
+	at com.core_product.pageobjects.CPHomePage.selectCategory(CPHomePage.java:58)
+	at com.core_product.stepdefinitions.CPStepDefinition.select_category(CPStepDefinition.java:31)
+	at ✽.select &quot;News &amp; Features&quot; Category(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Core_Product_Tests/src/test/java/com/core_product/feature/CPTests.feature:16)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.veeva_automation_framework.testRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Filter products by Department&quot;</td><td>&quot;Contains CP Tests&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
