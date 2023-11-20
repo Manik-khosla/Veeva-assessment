@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-20T09:41:14 IST" name="DP1TestSuite" finished-at="2023-11-20T09:41:31 IST" duration-ms="16815">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-11-20T09:41:14 IST" name="DP1 Test" finished-at="2023-11-20T09:41:31 IST" duration-ms="16815">
+      <class name="com.veeva_automation_framework.testRunner.TestRunner">
+        <test-method is-config="true" signature="readAppConfiguration(java.lang.String)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e]" started-at="2023-11-20T09:41:14 IST" name="readAppConfiguration" finished-at="2023-11-20T09:41:14 IST" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dp1.conf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readAppConfiguration -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e]" started-at="2023-11-20T09:41:14 IST" name="setUpClass" finished-at="2023-11-20T09:41:14 IST" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@117e0fe5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e]" started-at="2023-11-20T09:41:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T09:41:30 IST" duration-ms="16198" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate  Number of Slides displayed and title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CP1 Home Page Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sixers Take Down Hawks in Tournament Play] but found [Sixers Defeat Nets on the Road]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sixers Take Down Hawks in Tournament Play] but found [Sixers Defeat Nets on the Road]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
+at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
+at ✽.Slides containing title "Sixers Take Down Hawks in Tournament Play" are displayed for duration "0"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e]" started-at="2023-11-20T09:41:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T09:41:30 IST" duration-ms="15734" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate  Number of Slides displayed and title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CP1 Home Page Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Embiid Named Player of the Week] but found [Sixers Defeat Nets on the Road]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Embiid Named Player of the Week] but found [Sixers Defeat Nets on the Road]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
+at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
+at ✽.Slides containing title "Embiid Named Player of the Week" are displayed for duration "0"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e]" started-at="2023-11-20T09:41:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-20T09:41:30 IST" duration-ms="15740" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate  Number of Slides displayed and title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CP1 Home Page Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sixers Defeat Nets on the Road] but found [Sixers Take Down Hawks in Tournament Play]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sixers Defeat Nets on the Road] but found [Sixers Take Down Hawks in Tournament Play]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
+at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
+at ✽.Slides containing title "Sixers Defeat Nets on the Road" are displayed for duration "0"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e]" started-at="2023-11-20T09:41:30 IST" name="tearDownClass" finished-at="2023-11-20T09:41:31 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.veeva_automation_framework.testRunner.TestRunner -->
+    </test> <!-- DP1 Test -->
+  </suite> <!-- DP1TestSuite -->
+</testng-results>

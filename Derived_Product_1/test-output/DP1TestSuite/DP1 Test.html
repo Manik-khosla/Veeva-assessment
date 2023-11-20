@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>TestNG:  DP1 Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DP1 Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 20 09:41:14 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>16 seconds (16815 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.veeva_automation_framework.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.veeva_automation_framework.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  Number of Slides displayed and title", "CP1 Home Page Test Cases"</td>
+<td><div><pre>java.lang.AssertionError: expected [Sixers Take Down Hawks in Tournament Play] but found [Sixers Defeat Nets on the Road]
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Sixers Take Down Hawks in Tournament Play&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1784882576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1784882576'><pre>java.lang.AssertionError: expected [Sixers Take Down Hawks in Tournament Play] but found [Sixers Defeat Nets on the Road]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Sixers Take Down Hawks in Tournament Play&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+</pre></div></td>
+<td>16</td>
+<td>com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.veeva_automation_framework.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.veeva_automation_framework.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  Number of Slides displayed and title", "CP1 Home Page Test Cases"</td>
+<td><div><pre>java.lang.AssertionError: expected [Embiid Named Player of the Week] but found [Sixers Defeat Nets on the Road]
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Embiid Named Player of the Week&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1402795817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1402795817'><pre>java.lang.AssertionError: expected [Embiid Named Player of the Week] but found [Sixers Defeat Nets on the Road]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Embiid Named Player of the Week&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+</pre></div></td>
+<td>15</td>
+<td>com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e</td></tr>
+<tr>
+<td title='com.veeva_automation_framework.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.veeva_automation_framework.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  Number of Slides displayed and title", "CP1 Home Page Test Cases"</td>
+<td><div><pre>java.lang.AssertionError: expected [Sixers Defeat Nets on the Road] but found [Sixers Take Down Hawks in Tournament Play]
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Sixers Defeat Nets on the Road&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1051758153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051758153'><pre>java.lang.AssertionError: expected [Sixers Defeat Nets on the Road] but found [Sixers Take Down Hawks in Tournament Play]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:24)
+	at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_are_displayed_for_duration(DP1HomePageStepDefinitions.java:33)
+	at ?.Slides containing title &quot;Sixers Defeat Nets on the Road&quot; are displayed for duration &quot;0&quot;(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+</pre></div></td>
+<td>15</td>
+<td>com.veeva_automation_framework.testRunner.TestRunner@62ddbd7e</td></tr>
+</table><p>
+</body>
+</html>
