@@ -1,0 +1,7 @@
+com\core_product\pageobjects\CPHomePage.class
+com\core_product\pageobjects\NewsPage.class
+com\core_product\fileHandler\fileHandler.class
+com\core_product\setup\CPBaseSetup.class
+com\core_product_pojo\JacketInfo.class
+com\core_product\manager\CoreProductsPageObjectManager.class
+com\core_product\pageobjects\ProductsPage.class

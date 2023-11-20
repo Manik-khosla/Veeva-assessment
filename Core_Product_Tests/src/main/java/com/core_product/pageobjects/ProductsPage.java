@@ -9,9 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.veeva_automation_framework.files.fileHandler;
-import com.veeva_automation_framework.pageobjects.BasePage;
-import com.veeva_automation_framework.pojo.JacketInfo;
+import com.core.pageobjects.BasePage;
+import com.core_product.fileHandler.fileHandler;
+import com.core_product_pojo.JacketInfo;
+
+
 
 public class ProductsPage extends BasePage {
 

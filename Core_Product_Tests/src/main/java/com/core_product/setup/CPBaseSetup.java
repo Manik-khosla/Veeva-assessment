@@ -2,11 +2,11 @@ package com.core_product.setup;
 
 import org.openqa.selenium.WebDriver;
 
+import com.core.configurations.setup.BaseSetup;
 import com.core_product.manager.CoreProductsPageObjectManager;
 import com.core_product.pageobjects.CPHomePage;
 import com.core_product.pageobjects.NewsPage;
 import com.core_product.pageobjects.ProductsPage;
-import com.veeva_automation_framework.setup.BaseSetup;
 
 public class CPBaseSetup extends BaseSetup{
 	

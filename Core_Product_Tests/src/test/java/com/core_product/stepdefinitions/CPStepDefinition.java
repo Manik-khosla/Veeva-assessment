@@ -1,7 +1,7 @@
 package com.core_product.stepdefinitions;
 
+import com.core.configurations.AppConfig;
 import com.core_product.setup.CPBaseSetup;
-import com.veeva_automation_framework.configurations.AppConfig;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

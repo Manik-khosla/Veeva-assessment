@@ -1,331 +1,144 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    	
-  
-  <modelVersion>4.0.0</modelVersion>
-    	
-  
-  <groupId>com</groupId>
-    	
-  
-  <artifactId>veeva-automation-framework</artifactId>
-    	
-  
-  <version>0.0.1-SNAPSHOT</version>
-    	
-  
-  <packaging>pom</packaging>
-    	
-  
-  <name>veeva-automation-framework</name>
-    	
-  
-  <url>http://maven.apache.org</url>
-    	
-  
-  <properties>
-        		
-    
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        	
-  
-  </properties>
-    	
-  
-  <build>
-        		
-    
-    <plugins>
-            			
-      
-      <plugin>
-                				
-        
-        <groupId>org.apache.maven.plugins</groupId>
-                				
-        
-        <artifactId>maven-surefire-plugin</artifactId>
-                				
-        
-        <configuration>
-                    					
-          
-          <testFailureIgnore>true</testFailureIgnore>
-                    				
-        
-        </configuration>
-                			
-      
-      </plugin>
-            			
-      
-      <plugin>
-                				
-        
-        <groupId>net.masterthought</groupId>
-                				
-        
-        <artifactId>maven-cucumber-reporting</artifactId>
-                				
-        
-        <version>5.7.7</version>
-                				
-        
-        <executions>
-                    					
-          
-          <execution>
-                        						
-            
-            <id>execution</id>
-                        						
-            
-            <phase>verify</phase>
-                        						
-            
-            <goals>
-                            							
-              
-              <goal>generate</goal>
-                            						
-            
-            </goals>
-                        						
-            
-            <configuration>
-                            							
-              
-              <projectName>veeva-automation-framework</projectName>
-                            							
-              
-              <!-- optional, per documentation set this to "true"
-							to bypass generation of Cucumber Reports entirely,
-							defaults to false if not specified -->
-                            							
-              
-              <skip>false</skip>
-                            							
-              
-              <!-- output directory for the generated report -->
-                            							
-              
-              <outputDirectory>${project.build.directory}</outputDirectory>
-                            							
-              
-              <!-- optional, defaults to outputDirectory if not
-							specified -->
-                            							
-              
-              <inputDirectory>
-								${project.build.directory}/jsonReports</inputDirectory>
-                            							
-              
-              <jsonFiles>
-                                								
-                
-                <!-- supports wildcard or name pattern -->
-                                								
-                
-                <param>**/*.json</param>
-                                							
-              
-              </jsonFiles>
-                            							
-              
-              <!-- optional, defaults to outputDirectory if not
-							specified -->
-                            							
-              
-              <parallelTesting>false</parallelTesting>
-                            							
-              
-              <!-- optional, set true to group features by its Ids -->
-                            							
-              
-              <mergeFeaturesById>false</mergeFeaturesById>
-                            							
-              
-              <!-- optional, set true to get a final report with
-							latest results of the same test from different test
-							runs -->
-                            							
-              
-              <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
-                            							
-              
-              <!-- optional, set true to fail build on test
-							failures -->
-                            							
-              
-              <checkBuildResult>false</checkBuildResult>
-                            						
-            
-            </configuration>
-                        					
-          
-          </execution>
-                    				
-        
-        </executions>
-                			
-      
-      </plugin>
-            		
-    
-    </plugins>
-        	
-  
-  </build>
-    	
-  
-  <dependencies>
-        		
-    
-    <!--
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com</groupId>
+
+	<artifactId>veeva-automation-framework</artifactId>
+
+	<version>0.0.1-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+
+	<name>veeva-automation-framework</name>
+
+	<url>http://maven.apache.org</url>
+
+	<properties>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+	</properties>
+
+	<build>
+
+		<plugins>
+
+			
+		</plugins>			
+
+	</build>
+
+	<dependencies>
+
+		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-        		
-    
-    <dependency>
-            			
-      
-      <groupId>org.seleniumhq.selenium</groupId>
-            			
-      
-      <artifactId>selenium-java</artifactId>
-            			
-      
-      <version>4.15.0</version>
-            		
-    
-    </dependency>
-        		
-    
-    <!--
+
+		<dependency>
+
+			<groupId>org.seleniumhq.selenium</groupId>
+
+			<artifactId>selenium-java</artifactId>
+
+			<version>4.15.0</version>
+
+		</dependency>
+
+		<!--
 		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-        		
-    
-    <dependency>
-            			
-      
-      <groupId>io.github.bonigarcia</groupId>
-            			
-      
-      <artifactId>webdrivermanager</artifactId>
-            			
-      
-      <version>5.6.2</version>
-            		
-    
-    </dependency>
-        		
-    
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-        		
-    
-    <dependency>
-            			
-      
-      <groupId>io.cucumber</groupId>
-            			
-      
-      <artifactId>cucumber-java</artifactId>
-            			
-      
-      <version>7.14.0</version>
-            		
-    
-    </dependency>
-        		
-    
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-        		
-    
-    <dependency>
-            			
-      
-      <groupId>io.cucumber</groupId>
-            			
-      
-      <artifactId>cucumber-testng</artifactId>
-            			
-      
-      <version>7.14.0</version>
-            		
-    
-    </dependency>
-        		
-    
-    <dependency>
-            			
-      
-      <groupId>com.fasterxml.jackson.core</groupId>
-            			
-      
-      <artifactId>jackson-core</artifactId>
-            			
-      
-      <version>2.15.2</version>
-            		
-    
-    </dependency>
-        		
-    
-    <!--
+
+		<dependency>
+
+			<groupId>io.github.bonigarcia</groupId>
+
+			<artifactId>webdrivermanager</artifactId>
+
+			<version>5.6.2</version>
+
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+
+		<dependency>
+
+			<groupId>io.cucumber</groupId>
+
+			<artifactId>cucumber-java</artifactId>
+
+			<version>7.14.0</version>
+
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+
+		<dependency>
+
+			<groupId>io.cucumber</groupId>
+
+			<artifactId>cucumber-testng</artifactId>
+
+			<version>7.14.0</version>
+
+		</dependency>
+
+		<dependency>
+
+			<groupId>com.fasterxml.jackson.core</groupId>
+
+			<artifactId>jackson-core</artifactId>
+
+			<version>2.15.2</version>
+
+		</dependency>
+
+		<!--
 		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-        		
-    
-    <dependency>
-            			
-      
-      <groupId>com.fasterxml.jackson.core</groupId>
-            			
-      
-      <artifactId>jackson-databind</artifactId>
-            			
-      
-      <version>2.15.2</version>
-            		
-    
-    </dependency>
-        		
-    
-    <!--
+
+		<dependency>
+
+			<groupId>com.fasterxml.jackson.core</groupId>
+
+			<artifactId>jackson-databind</artifactId>
+
+			<version>2.15.2</version>
+
+		</dependency>
+
+		<!--
 		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
-        		
-    
-    <dependency>
-            			
-      
-      <groupId>com.fasterxml.jackson.core</groupId>
-            			
-      
-      <artifactId>jackson-annotations</artifactId>
-            			
-      
-      <version>2.15.2</version>
-            		
-    
-    </dependency>
-        		
-    
-    <dependency>
-            			
-      
-      <groupId>com.typesafe</groupId>
-            			
-      
-      <artifactId>config</artifactId>
-            			
-      
-      <version>1.4.3</version>
-            		
-    
-    </dependency>
-      
-  </dependencies>
-  
-  <modules>
-     <module>Core_Product_Tests</module>
-    <module>Derived_Product_1</module>
-  </modules>
+
+		<dependency>
+
+			<groupId>com.fasterxml.jackson.core</groupId>
+
+			<artifactId>jackson-annotations</artifactId>
+
+			<version>2.15.2</version>
+
+		</dependency>
+
+		<dependency>
+
+			<groupId>com.typesafe</groupId>
+
+			<artifactId>config</artifactId>
+
+			<version>1.4.3</version>
+
+		</dependency>
+
+	</dependencies>
+
+	<modules>
+		<module>automation-framework</module>
+
+		<module>Core_Product_Tests</module>
+
+		<module>Derived_Product_1</module>
+
+	</modules>
+
 </project>

@@ -7,7 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.veeva_automation_framework.pageobjects.BasePage;
+import com.core.pageobjects.BasePage;
+
 
 public class NewsPage extends BasePage {
 

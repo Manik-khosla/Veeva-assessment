@@ -2,10 +2,10 @@ package com.dp1.setup;
 
 import org.openqa.selenium.WebDriver;
 
-
+import com.core.configurations.setup.BaseSetup;
 import com.dp1.manager.DP1PageObjectManager;
 import com.dp1.pageobjects.DP1HomePage;
-import com.veeva_automation_framework.setup.BaseSetup;
+
 
 public class DP1BaseSetup extends BaseSetup{
 	

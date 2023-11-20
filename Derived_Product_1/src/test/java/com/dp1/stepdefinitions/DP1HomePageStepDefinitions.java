@@ -1,7 +1,7 @@
 package com.dp1.stepdefinitions;
 
+import com.core.configurations.AppConfig;
 import com.dp1.setup.DP1BaseSetup;
-import com.veeva_automation_framework.configurations.AppConfig;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

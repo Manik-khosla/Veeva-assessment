@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="DP1TestSuite">
-  	<parameter name="filename" value = "dp1.conf" />
+<suite name="DP1TestSuite" parallel="false">
+  	<parameter name="filename" value = "dp1.conf"  />
 	<test name="DP1 Test" >
         <parameter name="cucumber.features" value="src/test/java/com/dp1/feature"/>
 		<parameter name="cucumber.glue" value="com.dp1.stepdefinitions"/>
 		<classes>
-			<class name="com.veeva_automation_framework.testRunner.TestRunner"/>
+			<class name="com.core.testRunner.TestRunner"/>
 		</classes>
 	</test>
 </suite>

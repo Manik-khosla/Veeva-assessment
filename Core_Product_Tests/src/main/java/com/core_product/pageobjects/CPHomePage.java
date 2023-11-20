@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.veeva_automation_framework.pageobjects.BasePage;
+import com.core.pageobjects.BasePage;
 
 public class CPHomePage extends BasePage{
 	
