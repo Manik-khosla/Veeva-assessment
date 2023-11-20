@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-21T01:06:09 IST" name="DP1TestSuite" finished-at="2023-11-21T01:07:22 IST" duration-ms="73823">
+  <suite started-at="2023-11-21T01:18:27 IST" name="DP1TestSuite" finished-at="2023-11-21T01:19:40 IST" duration-ms="72881">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-11-21T01:06:09 IST" name="DP1 Test" finished-at="2023-11-21T01:07:22 IST" duration-ms="73823">
+    <test started-at="2023-11-21T01:18:27 IST" name="DP1 Test" finished-at="2023-11-21T01:19:40 IST" duration-ms="72881">
       <class name="com.core.testRunner.TestRunner">
-        <test-method is-config="true" signature="readAppConfiguration(java.lang.String)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:06:09 IST" name="readAppConfiguration" finished-at="2023-11-21T01:06:09 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="readAppConfiguration(java.lang.String)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:18:27 IST" name="readAppConfiguration" finished-at="2023-11-21T01:18:27 IST" duration-ms="111" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readAppConfiguration -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:06:09 IST" name="setUpClass" finished-at="2023-11-21T01:06:09 IST" duration-ms="309" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:18:27 IST" name="setUpClass" finished-at="2023-11-21T01:18:28 IST" duration-ms="295" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:06:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-21T01:07:22 IST" duration-ms="73258" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:18:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-21T01:19:38 IST" duration-ms="69735" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -47,87 +47,13 @@
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@548b0a4a (tried for 60 second(s) with 0 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@547334fe (tried for 60 second(s) with 0 milliseconds interval)
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@548b0a4a (tried for 60 second(s) with 0 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
-at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
-at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
-at ✽.Slides containing title "Sixers Defeat Nets on the Road" is displayed with "/sixers/videos/philadelphia-76ers-vs-brooklyn-nets-nov-19-2023"  for duration "10"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:06:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-21T01:07:20 IST" duration-ms="71167" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate  Number of Slides displayed and title"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["CP1 Home Page Test Cases"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@40ebf010 (tried for 60 second(s) with 0 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@40ebf010 (tried for 60 second(s) with 0 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
-at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
-at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
-at ✽.Slides containing title "Embiid Named Player of the Week" is displayed with "/sixers/news/joel-embiid-named-eastern-conference-player-of-the-week"  for duration "10"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:06:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-21T01:07:21 IST" duration-ms="71954" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate  Number of Slides displayed and title"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["CP1 Home Page Test Cases"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@557edaf6 (tried for 60 second(s) with 0 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@557edaf6 (tried for 60 second(s) with 0 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@547334fe (tried for 60 second(s) with 0 milliseconds interval)
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: driver.version: unknown
@@ -143,7 +69,81 @@ at ✽.Slides containing title "Sixers Take Down Hawks in Tournament Play" is di
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:07:22 IST" name="tearDownClass" finished-at="2023-11-21T01:07:22 IST" duration-ms="219" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:18:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-21T01:19:38 IST" duration-ms="69895" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate  Number of Slides displayed and title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CP1 Home Page Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@6c28a23e (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@6c28a23e (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+at ✽.Slides containing title "Sixers Defeat Nets on the Road" is displayed with "/sixers/videos/philadelphia-76ers-vs-brooklyn-nets-nov-19-2023"  for duration "10"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:18:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-21T01:19:40 IST" duration-ms="72341" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate  Number of Slides displayed and title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CP1 Home Page Test Cases"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@3edaf4a2 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.dp1.pageobjects.DP1HomePage$1@3edaf4a2 (tried for 60 second(s) with 0 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.dp1.pageobjects.DP1HomePage.waitForHrefValueToBe(DP1HomePage.java:56)
+at com.dp1.pageobjects.DP1HomePage.validateSlideTitleAndDuration(DP1HomePage.java:47)
+at com.dp1.stepdefinitions.DP1HomePageStepDefinitions.slides_containing_title_is_displayed_with_for_duration(DP1HomePageStepDefinitions.java:33)
+at ✽.Slides containing title "Embiid Named Player of the Week" is displayed with "/sixers/news/joel-embiid-named-eastern-conference-player-of-the-week"  for duration "10"(file:///C:/Users/hp/eclipse-workspace/veeva-automation-framework-Multi-Module/Derived_Product_1/src/test/java/com/dp1/feature/DP1Test.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.core.testRunner.TestRunner@4550bb58]" started-at="2023-11-21T01:19:40 IST" name="tearDownClass" finished-at="2023-11-21T01:19:40 IST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
