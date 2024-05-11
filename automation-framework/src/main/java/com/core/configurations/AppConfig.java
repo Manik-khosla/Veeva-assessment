@@ -17,7 +17,6 @@ public class AppConfig {
 
 		Config defaultConfiguration = ConfigFactory.parseFile(new File(AppConfig.class.getClassLoader().getResource(filePath).getFile()));
 		 configuration = ConfigFactory.parseResources(filePath).withFallback(defaultConfiguration).resolve();
-		 System.out.println("Add Dummy Line for Jenkins Job");
 		 }
 	
 	public static Config getConfiguration() {
